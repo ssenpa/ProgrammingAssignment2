@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
     return(ivx)
   }
   
-## If the inverse is not yet calculated, calculate it and catch it   
+## If the inverse is not yet calculated, calculate it and catch it and return it
   data <- x$get()
   ivx <- solve(data, ...)
   x$setivx(ivx)
